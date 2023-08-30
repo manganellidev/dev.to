@@ -1,5 +1,10 @@
-export default function (name: string) {
+const helloMsg = (name: string) => {
   return `Hello, ${name}!`;
-}
+};
 
-export const namedExport = () => "Hello, from namedExport func!";
+const namedExport = () => "Hello, from namedExport func!";
+
+export default {
+  helloMsg,
+  namedExport,
+};

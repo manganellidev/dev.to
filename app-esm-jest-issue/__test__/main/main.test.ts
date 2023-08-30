@@ -1,5 +1,5 @@
-import helloMsg from "../../src/main/main";
+import main from "@App/main/main.js";
 
 test("main", () => {
-  expect(helloMsg("Alex")).toBe("Hello, Alex!");
+  expect(main.helloMsg("Alex")).toBe("Hello, Alex!");
 });

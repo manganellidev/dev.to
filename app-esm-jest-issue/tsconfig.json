@@ -12,6 +12,5 @@
     "paths": {
       "@App/*": ["src/*"]
     }
-  },
-  "exclude": ["node_modules", "./*.ts", "__test__"]
+  }
 }

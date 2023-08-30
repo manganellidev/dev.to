@@ -1,4 +1,8 @@
-import helloMsg, { namedExport } from "@App/main/main.js";
+import main from "@App/main/main.js";
 
-console.log(helloMsg("Alex"));
-console.log(namedExport());
+export const run = () => {
+  console.log(main.helloMsg("Alex"));
+  console.log(main.namedExport());
+};
+
+run();

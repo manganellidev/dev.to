@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json",
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "dev": "tsx src/index.ts",
-    "start": "node dist/index.js"
+    "start": "node --loader @bleed-believer/path-alias ./dist/src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +20,8 @@
     "ts-node": "^10.9.1",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@bleed-believer/path-alias": "^0.15.2"
   }
 }

@@ -3,7 +3,7 @@ import type { JestConfigWithTsJest } from "ts-jest";
 const config: JestConfigWithTsJest = {
   verbose: true,
   transform: {
-    "^.+\\.ts?$": [
+    "^.+\\.(t|j)s$": [
       "ts-jest",
       {
         useESM: true,
@@ -12,7 +12,7 @@ const config: JestConfigWithTsJest = {
   },
   extensionsToTreatAsEsm: [".ts"],
   moduleNameMapper: {
-    "@App/(.*)": "<rootDir>/$1",
+    "^@App/(.*)\\.js$": "<rootDir>/src/$1",
   },
 };
 
